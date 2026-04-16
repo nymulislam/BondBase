@@ -4,7 +4,7 @@ const FriendDetails
  = () => {
     return (
         <div>
-            This is Fried Details page.
+            This is Friend Details page.
         </div>
     );
 };
