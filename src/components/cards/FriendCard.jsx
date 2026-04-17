@@ -45,7 +45,6 @@ const FriendCard = ({ friend }) => {
                     >
                         {status}
                     </p>
-
                 </div >
             </Link>
         </div>

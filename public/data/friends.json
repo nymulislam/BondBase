@@ -9,7 +9,7 @@
         "tags": [
             "Masjid Friend"
         ],
-        "bio": "A dedicated student of knowledge. We often meet at the local mosque for Fajr and discuss Islamic history.",
+        "bio": "We usually catch up on Islamic history after Fajr prayers",
         "goal": 7,
         "next_due_date": "2026-04-20"
     },
@@ -24,7 +24,7 @@
             "College",
             "Childhood"
         ],
-        "bio": "Met in primary school. He is very punctual with his prayers and always reminds me to stay productive.",
+        "bio": "School friend who always reminds me to stay regular with Salah",
         "goal": 10,
         "next_due_date": "2026-04-12"
     },
@@ -39,7 +39,7 @@
             "Work",
             "Halaqa Partner"
         ],
-        "bio": "Colleague at the software firm. We participate in a weekly Quran study circle together every Friday.",
+        "bio": "Work colleague and my partner in our weekly Quran study circle",
         "goal": 7,
         "next_due_date": "2026-04-19"
     },
@@ -54,7 +54,7 @@
             "University",
             "Travel"
         ],
-        "bio": "A great companion during long travels. We explored many historical mosques across the country together.",
+        "bio": "Best travel companion. We explored many historic mosques together",
         "goal": 10,
         "next_due_date": "2026-04-18"
     },
@@ -69,7 +69,7 @@
             "Community",
             "Social Work"
         ],
-        "bio": "Active member of the An-Nujum Foundation. He leads the youth volunteer team for aid distribution.",
+        "bio": "A selfless brother leading the youth volunteer team at An-Nujum",
         "goal": 14,
         "next_due_date": "2026-04-05"
     },
@@ -84,7 +84,7 @@
             "Neighbor",
             "Gym"
         ],
-        "bio": "Stays right next door. A very humble brother who loves swimming and often invites me for Iftar.",
+        "bio": "A humble neighbor who loves swimming and hosting Iftar",
         "goal": 5,
         "next_due_date": "2026-04-18"
     },
@@ -98,7 +98,7 @@
         "tags": [
             "Tech Enthusiast"
         ],
-        "bio": "Passionate about Islamic calligraphy and MERN stack development. We share coding tips daily.",
+        "bio": "Deeply passionate about Islamic calligraphy and MERN stack",
         "goal": 3,
         "next_due_date": "2026-04-19"
     },
@@ -113,7 +113,7 @@
             "Senior",
             "Mentor"
         ],
-        "bio": "A senior developer who guided me during my early days. He balances his professional life and Deen perfectly.",
+        "bio": "Senior mentor who perfectly balances his Deen and profession",
         "goal": 14,
         "next_due_date": "2026-04-21"
     }
