@@ -3,7 +3,7 @@ import SummaryCard from "@/components/cards/SummaryCard";
 
 const HomePage = async () => {
 
-    const res = await fetch('http://localhost:3000/data/friends.json');
+    const res = await fetch('https://bondbase.vercel.app/data/friends.json');
     const friendsData = await res.json();
 
     return (

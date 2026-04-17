@@ -8,7 +8,7 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 const FriendDetails
     = async ({ params }) => {
         const { id } = await params;
-        const res = await fetch('http://localhost:3000/data/friends.json')
+        const res = await fetch('https://bondbase.vercel.app/data/friends.json');
         const data = await res.json();
 
         const friendInfo = data.find(friend => friend.id == id)
@@ -56,7 +56,7 @@ const FriendDetails
 
                             {/* Bio */}
                             <p className="text-gray-600 italic text-sm">&quot;{bio}&quot;</p>
-            <p className="text-gray-500 font-semibold">{email}</p>
+                            <p className="text-gray-500 font-semibold">{email}</p>
                         </div>
 
                         <div className="flex flex-col gap-2.5 mt-5">
