@@ -5,6 +5,8 @@ import Link from "next/link";
 import { GoGraph } from "react-icons/go";
 import { RiHome2Line, RiTimeLine } from "react-icons/ri";
 import { usePathname } from "next/navigation";
+import { FcMenu } from "react-icons/fc";
+import { CgMenuRightAlt } from "react-icons/cg";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -56,9 +58,9 @@ const Navbar = () => {
                 <div className="lg:hidden navbar-end">
                     <button
                         onClick={() => setOpen(!open)}
-                        className="btn btn-ghost"
+                        className="btn hover:bg-emerald-100 hover:text-emerald-900"
                     >
-                        ☰
+                        <FcMenu size={23} />
                     </button>
                 </div>
             </div>
@@ -74,7 +76,7 @@ const Navbar = () => {
                             <Link
                                 href={item.href}
                                 onClick={() => setOpen(false)}
-                                className="flex items-center gap-2 transition hover:translate-x-1"
+                                className="flex items-center gap-2 hover:bg-emerald-100 hover:text-emerald-900 transition hover:translate-x-1"
                             >
                                 {item.icon}
                                 {item.name}

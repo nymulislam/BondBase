@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "name": "Abdullah Al-Mahmud",
+        "picture": "https://i.ibb.co/4ntHTpv0/user-1.jpg",
+        "email": "abdullah.mahmud@email.com",
+        "days_since_contact": 2,
+        "status": "On-Track",
+        "tags": [
+            "Masjid Friend"
+        ],
+        "bio": "A dedicated student of knowledge. We often meet at the local mosque for Fajr and discuss Islamic history.",
+        "goal": 7,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 2,
+        "name": "Sajid Bin Hassan",
+        "picture": "https://i.ibb.co/VbmYwRL/user-2.jpg",
+        "email": "sajid.hassan@email.com",
+        "days_since_contact": 15,
+        "status": "Overdue",
+        "tags": [
+            "College",
+            "Childhood"
+        ],
+        "bio": "Met in primary school. He is very punctual with his prayers and always reminds me to stay productive.",
+        "goal": 10,
+        "next_due_date": "2026-04-12"
+    },
+    {
+        "id": 3,
+        "name": "Omar Faruk",
+        "picture": "https://i.ibb.co/Py4zPY5/user-3.jpg",
+        "email": "omar.faruk@email.com",
+        "days_since_contact": 5,
+        "status": "On-Track",
+        "tags": [
+            "Work",
+            "Halaqa Partner"
+        ],
+        "bio": "Colleague at the software firm. We participate in a weekly Quran study circle together every Friday.",
+        "goal": 7,
+        "next_due_date": "2026-04-19"
+    },
+    {
+        "id": 4,
+        "name": "Zayd Ibrahim",
+        "picture": "https://i.ibb.co/60WYS7Nk/user-4.jpg",
+        "email": "zayd.ibrahim@email.com",
+        "days_since_contact": 8,
+        "status": "Almost Due",
+        "tags": [
+            "University",
+            "Travel"
+        ],
+        "bio": "A great companion during long travels. We explored many historical mosques across the country together.",
+        "goal": 10,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 5,
+        "name": "Mustafa Ahmed",
+        "picture": "https://i.ibb.co/PG5qsn1V/user-5.jpg",
+        "email": "mustafa.ahmed@email.com",
+        "days_since_contact": 25,
+        "status": "Overdue",
+        "tags": [
+            "Community",
+            "Social Work"
+        ],
+        "bio": "Active member of the An-Nujum Foundation. He leads the youth volunteer team for aid distribution.",
+        "goal": 14,
+        "next_due_date": "2026-04-05"
+    },
+    {
+        "id": 6,
+        "name": "Hamza Yousaf",
+        "picture": "https://i.ibb.co/7xMvTBtg/user-6.jpg",
+        "email": "hamza.yousaf@email.com",
+        "days_since_contact": 4,
+        "status": "Almost Due",
+        "tags": [
+            "Neighbor",
+            "Gym"
+        ],
+        "bio": "Stays right next door. A very humble brother who loves swimming and often invites me for Iftar.",
+        "goal": 5,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 7,
+        "name": "Salman Al-Farsi",
+        "picture": "https://i.ibb.co/5gSnmHNz/user-7.jpg",
+        "email": "salman.farsi@email.com",
+        "days_since_contact": 1,
+        "status": "On-Track",
+        "tags": [
+            "Tech Enthusiast"
+        ],
+        "bio": "Passionate about Islamic calligraphy and MERN stack development. We share coding tips daily.",
+        "goal": 3,
+        "next_due_date": "2026-04-19"
+    },
+    {
+        "id": 8,
+        "name": "Imran Nazir",
+        "picture": "https://i.ibb.co/KBBWghb/user-8.jpg",
+        "email": "imran.nazir@email.com",
+        "days_since_contact": 12,
+        "status": "Almost Due",
+        "tags": [
+            "Senior",
+            "Mentor"
+        ],
+        "bio": "A senior developer who guided me during my early days. He balances his professional life and Deen perfectly.",
+        "goal": 14,
+        "next_due_date": "2026-04-21"
+    }
+]

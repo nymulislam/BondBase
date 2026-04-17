@@ -1,46 +1,55 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const FriendCard = ({ name = "Name", role = "WORK", status = "Almost Due", lastSeen = "62d ago" }) => {
-  return (
-    <div className="p-6 flex flex-col items-center text-center gap-2 shadow-md rounded-xl bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50 my-10">
+const FriendCard = ({ friend }) => {
 
-      {/* Avatar */}
-      <div className="relative w-14 h-14">
-        <Image
-          src="https://placehold.net/avatar.png"
-          alt={`${name} profile`}
-          fill
-          className="rounded-full object-cover"
-        />
-      </div>
+    const { id, picture, name, status, tags, days_since_contact } = friend
 
-      {/* Name */}
-      <h4 className="text-lg font-semibold transition hover:text-emerald-600">
-        {name}
-      </h4>
+    return (
+        <div>
+            <Link href={`/friend/${id}`}>
+                <div className="p-6 flex flex-col items-center text-center gap-2 shadow-md rounded-xl bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50 my-10">
+                    <div className="relative w-14 h-14">
+                        <Image
+                            src={picture}
+                            alt='User Profile'
+                            width={200}
+                            height={200}
+                            className="rounded-full object-cover" />
+                    </div>
 
-      {/* Last seen */}
-      <p className="text-sm text-gray-500">{lastSeen}</p>
+                    {/* Name */}
+                    <h4 className="text-lg font-semibold transition hover:text-emerald-600">
+                        {name}
+                    </h4>
 
-      {/* Tag / Role */}
-      <span className="text-xs px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium">
-        {role}
-      </span>
+                    {/* Days since contact */}
+                    <p className="text-sm font-semibold text-gray-500">{days_since_contact}d ago</p>
 
-      {/* Status */}
-      <p
-        className={`text-sm font-medium ${
-          status === "Almost Due"
-            ? "text-red-500"
-            : "text-emerald-600"
-        }`}
-      >
-        {status}
-      </p>
+                    {/* Tags */}
+                    <div className="flex gap-3">
+                        {tags.map((tag, index) => (<span
+                            key={index}
+                            className="text-xs px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium">
+                            {tag}
+                        </span>))}
+                    </div>
 
-    </div>
-  );
-};
+                    {/* Status */}
+                    < p
+                        className={`text-sm font-medium px-2 py-0.5 mt-2 ${status === "Almost Due"
+                            ? "text-red-500 bg-red-100 rounded-full"
+                            : status === "Overdue" ? "text-warning bg-yellow-100 rounded-full" : "text-emerald-600 bg-emerald-100 rounded-full"
+                            }`}
+                    >
+                        {status}
+                    </p>
+
+                </div >
+            </Link>
+        </div>
+    );
+}
 
 export default FriendCard;

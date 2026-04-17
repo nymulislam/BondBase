@@ -45,7 +45,7 @@ const SummaryCard = () => {
                 {/* Card 4 */}
                 <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
                     <h4 className="text-lg font-semibold">12</h4>
-                    <p className="opacity-75">Interactions This Month</p>
+                    <p className="opacity-75">Monthly Interactions</p>
                 </div>
 
             </div>
