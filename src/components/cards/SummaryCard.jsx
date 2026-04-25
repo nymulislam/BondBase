@@ -5,7 +5,7 @@ const SummaryCard = () => {
     return (
         <div>
             {/* Hero Section */}
-            <div className="text-center space-y-2.5">
+            <div className="text-center space-y-5">
                 <h1 className="text-4xl font-bold transition duration-300">
                     Friends to keep close in your life
                 </h1>
@@ -31,19 +31,19 @@ const SummaryCard = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
+                <div className="p-8 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
                     <h4 className="text-lg font-semibold">3</h4>
                     <p className="opacity-75">On Track</p>
                 </div>
 
                 {/* Card 3 */}
-                <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
+                <div className="p-8 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
                     <h4 className="text-lg font-semibold">6</h4>
                     <p className="opacity-75">Need Attention</p>
                 </div>
 
                 {/* Card 4 */}
-                <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
+                <div className="p-8 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
                     <h4 className="text-lg font-semibold">12</h4>
                     <p className="opacity-75">Monthly Interactions</p>
                 </div>

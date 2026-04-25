@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { AiOutlineDelete } from "react-icons/ai";
-import { IoVideocamOutline } from "react-icons/io5";
-import { LuMessageSquareMore, LuPhoneCall } from "react-icons/lu";
 import { MdOutlineArchive } from "react-icons/md";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
+import QuickCheckIn from "@/components/details/QuickCheckIn";
+import Overview from "@/components/details/Overview";
 
 const FriendDetails
     = async ({ params }) => {
@@ -13,7 +13,7 @@ const FriendDetails
 
         const friendInfo = data.find(friend => friend.id == id)
 
-        const { name, picture, status, tags, bio, email } = friendInfo
+        const { name, picture, status, tags, bio, email, days_since_contact, goal, next_due_date } = friendInfo;
 
         return (
             <div className="max-w-6xl mx-auto my-10">
@@ -73,29 +73,9 @@ const FriendDetails
                     </div>
 
                     {/* Right column */}
-                    <div className="space-y-5 flex-1">
+                    <div className="space-y-5 flex-1 container mx-auto">
                         {/* Cards */}
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
-
-                            {/* Card 1 */}
-                            <div className="p-8 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
-                                <h4 className="text-2xl font-bold">62</h4>
-                                <p className="opacity-75">Days Since Contact</p>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
-                                <h4 className="text-2xl font-bold">30</h4>
-                                <p className="opacity-75">Goal (Days)</p>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="px-10 py-5 text-center shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50">
-                                <h4 className="text-2xl font-bold">Feb 27, 2026</h4>
-                                <p className="opacity-75">Next Due</p>
-                            </div>
-
-                        </div>
+                       <Overview days_since_contact={days_since_contact} goal={goal} next_due_date={next_due_date}/>
 
                         {/* Goal Card */}
                         <div className="p-6 shadow-md rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-emerald-50 space-y-5">
@@ -103,7 +83,7 @@ const FriendDetails
                                 <h4 className="text-lg font-semibold">Relationship Goal</h4>
                                 <button className="btn btn-sm">Edit</button>
                             </div>
-                            <p className="opacity-75">Connect every <strong>30 days</strong></p>
+                            <p className="opacity-75">Connect every <strong>{goal} days</strong></p>
                         </div>
 
                         {/* Check-in Card */}
@@ -111,33 +91,7 @@ const FriendDetails
 
                             <h4 className="font-medium mb-3">Quick Check-In</h4>
                             {/* Cards */}
-                            <div className="grid grid-cols-3 gap-4">
-
-                                {/* Card 1 */}
-                                <div className="p-6 text-center rounded-xl flex flex-col items-center gap-2 inset-shadow-sm transition-all duration-300 hover:bg-emerald-100 hover:-translate-y-1 cursor-pointer">
-                                    <div>
-                                        <LuPhoneCall size={22} />
-                                    </div>
-                                    <p className="opacity-75 font-medium">Call</p>
-                                </div>
-
-                                {/* Card 2 */}
-                                <div className="p-6 text-center rounded-xl flex flex-col items-center gap-2 inset-shadow-sm transition-all duration-300 hover:bg-emerald-100 hover:-translate-y-1 cursor-pointer">
-                                    <div>
-                                        <LuMessageSquareMore size={22} />
-                                    </div>
-                                    <p className="opacity-75 font-medium">Text</p>
-                                </div>
-
-                                {/* Card 3 */}
-                                <div className="p-6 text-center rounded-xl flex flex-col items-center gap-2 inset-shadow-sm transition-all duration-300 hover:bg-emerald-100 hover:-translate-y-1 cursor-pointer">
-                                    <div>
-                                        <IoVideocamOutline size={22} />
-                                    </div>
-                                    <p className="opacity-75 font-medium">Video</p>
-                                </div>
-
-                            </div>
+                            <QuickCheckIn name={name} />
                         </div>
                     </div>
                 </div>

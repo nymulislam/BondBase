@@ -7,7 +7,7 @@ const HomePage = async () => {
     const friendsData = await res.json();
 
     return (
-        <div className="my-10">
+        <div className="my-16">
 
             <SummaryCard />
 
@@ -16,7 +16,7 @@ const HomePage = async () => {
 
             {/* Section title */}
             <div className="max-w-5xl mx-auto">
-                <h4 className="text-xl font-semibold transition hover:text-emerald-600">
+                <h4 className="text-xl ml-2 font-semibold transition hover:text-emerald-600">
                     Your Friends
                 </h4>
 
